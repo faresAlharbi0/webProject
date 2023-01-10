@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header1{
+    background-color: rgb(74, 163, 236);
+    border: 5px solid rgba(6, 66, 94, 0.925);
+    display: flex;
+    align-items: center;
+}
+.nav{
+    
+}
