@@ -7,14 +7,24 @@
 html{
     font-size: 62.5%;
 }
+.Hcontainer{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    position: relative;left: 2.5rem;
+}
 .header1{
+    height: 7rem;
     background-color: rgb(74, 163, 236);
     border: 5px solid rgba(6, 66, 94, 0.925);
     display: flex;
     align-items: center;
+    column-gap: 3rem;
 }
 .nav{
-    
+    font-size: 2rem;
+    display: flex;
+    column-gap: 2rem;
 }
 .container{
     width:100%;
