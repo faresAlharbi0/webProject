@@ -139,6 +139,13 @@ html{
     justify-content: center;
     align-items: center;
 }
+.inputfields input,textarea{
+    background-color: #b2b2ca;
+    border: 0.2rem solid rgba(6, 66, 94, 0.925);
+}
+.inputfields input[type = submit]{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
 .celendar{
     width: 45rem;
     height: 52rem;
