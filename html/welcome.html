@@ -5,64 +5,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome!</title>
-        <link rel="stylesheet" href="welcome.css">
+        <link rel="stylesheet" href= "../css/welcome.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap" 
+        rel="stylesheet">
     </head>
-
     <body>
-        <div class="hero">
-            <div class="form-box">
-                <div class="button-box">
-                    <div id="button"></div>
-                    <button type="button" class="toggle-button" onclick="login()">Log In</button>
-                    <button type="button" class="toggle-button" onclick="register()">Register</button>
-                </div>
-                <form class="input-box" id="login">
-                    <div class="animate-box">
-                        <input type="text" class="text-box" required>
-                        <span>Email</span>
-                    </div>
-                    <div class="animate-box">
-                        <input type="password" class="text-box" required>
-                        <span>Password</span>
-                    </div>
-                    <div class="box"></div>
-                    <button type="submit" class="submit-button">Log In</button>
-                </form>
-                <form class="input-box" id="register">
-                    <div class="animate-box">
-                        <input type="text" class="text-box" required>
-                        <span>User name</span>
-                    </div>
-                    <div class="animate-box">
-                        <input type="text" class="text-box" required>
-                        <span>Email</span>
-                    </div>
-                    <div class="animate-box">
-                        <input type="password" class="text-box" required>
-                        <span>Password</span>
-                    </div>
-                    <div class="box"></div>
-                    <button type="submit" class="submit-button">Register</button>
-                </form>
-                <div class="forgot"><p><a href="forgot.html">Forgot password?</a></p></div>
+        <header class="header1">
+            <div class="Hcontainer">
+                <img src="../images/calendar.png" alt ="icon image of a calendar"  
+                width="50">
+                <nav class="nav">
+                <a href="index.html"> home</a>
+                <a href="aboutUs.html">about us</a>
+                <a href="contactUs.html"> contact us</a>            
+                </nav>
             </div>
+        </header>
+        <div class="bcontainer">
+            <div class="hero">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="button"></div>
+                        <button type="button" class="toggle-button" onclick="login()">Log In</button>
+                        <button type="button" class="toggle-button" onclick="register()">Register</button>
+                    </div>
+                    <form class="input-box" id="login">
+                        <div class="animate-box">
+                            <input type="text" class="text-box" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="animate-box">
+                            <input type="password" class="text-box" required>
+                            <span>Password</span>
+                        </div>
+                        <div class="box"></div>
+                        <button type="submit" class="submit-button">Log In</button>
+                    </form>
+                    <form class="input-box" id="register">
+                        <div class="animate-box">
+                            <input type="text" class="text-box" required>
+                            <span>User name</span>
+                        </div>
+                        <div class="animate-box">
+                            <input type="text" class="text-box" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="animate-box">
+                            <input type="password" class="text-box" required>
+                            <span>Password</span>
+                        </div>
+                        <div class="box"></div>
+                        <button type="submit" class="submit-button">Register</button>
+                    </form>
+                    <div class="forgot"><p><a href="forgot.html">Forgot password?</a></p></div>
+                </div>
+            </div>
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("button");
+    
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "110px";
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0px";
+                }
+            </script>
         </div>
-        <script>
-            var x = document.getElementById("login");
-            var y = document.getElementById("register");
-            var z = document.getElementById("button");
-
-            function register(){
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
-            }
-            function login(){
-                x.style.left = "50px";
-                y.style.left = "450px";
-                z.style.left = "0px";
-            }
-        </script>
     </body>
 </html>
 
