@@ -126,6 +126,18 @@ html{
 }
 .inputfields{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    font-size: 1.6rem;
+}
+.inputfields div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .celendar{
     width: 45rem;
