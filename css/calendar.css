@@ -220,3 +220,22 @@ html{
 .today{
     background-color: rgba(13, 113, 160, 0.925);
 }
+.submenu {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 220px;
+    background-color: #FFF;
+    padding: 10px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0,.5) ;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .5); 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    }
+    
+    .submenu li { padding: 10px
+    }
+    .submenu li a { color: #777;
+    text-decoration: none
+    }
+    submenu li a:hover { color: #F00;
+    }
