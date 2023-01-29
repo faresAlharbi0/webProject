@@ -11,3 +11,73 @@
 .nav{
     
 }
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background: #00155a;
+    height: 793px;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+    border-radius: 30%;
+}
+
+.aboutUs{
+    width: 550px;
+}
+
+.thebody{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+#subTitle{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+#subspan{
+    color: red;
+}
+
+.aboutUs p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+button{
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
