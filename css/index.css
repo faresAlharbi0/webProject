@@ -65,7 +65,8 @@ html{
     width: 150px;
     
 }
-button{
+.button{
+    text-align: center;
     margin-top: 3rem;
     background: #f9004d;
     color: white;
@@ -76,12 +77,12 @@ button{
     border-radius: 30px;
     margin-bottom: 20px;
 }
-button a{
+.button a{
     text-decoration: none;
     color: white;
 }
 
-button:hover{
+.button:hover{
     background: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
