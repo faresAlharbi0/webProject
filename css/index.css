@@ -40,3 +40,63 @@ html{
     background-color: rgba(21, 145, 202, 0.925);
     border: 0.2rem solid rgba(6, 66, 94, 0.925);
 }
+.text{
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+.textRed{
+    font-size: 3rem;
+    color: red;
+}
+.texttitle{
+    margin-left: 5rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.texttitle2{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.images{
+    position: relative; left: 4rem;
+    width: 150px;
+    
+}
+button{
+    margin-top: 3rem;
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.text1{
+    font-weight: 100;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 3rem;
+    width: 40rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vw;
+    background: #00155a;
+}
