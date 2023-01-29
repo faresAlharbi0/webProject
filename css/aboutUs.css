@@ -22,11 +22,13 @@ html{
     column-gap: 3rem;
 }
 .nav{
-<<<<<<< HEAD
     font-size: 2rem;
     display: flex;
     column-gap: 2rem;
     transition: background-color 0.2rem;
+}
+body{
+    background: #00155a;
 }
 .nav a{
     text-decoration: none;
@@ -40,7 +42,6 @@ html{
 .nav a:hover:not(.currentpage){
     background-color: rgba(21, 145, 202, 0.925);
     border: 0.2rem solid rgba(6, 66, 94, 0.925);
-=======
     
 }
 
@@ -112,5 +113,4 @@ button:hover{
     background: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
->>>>>>> main
 }
