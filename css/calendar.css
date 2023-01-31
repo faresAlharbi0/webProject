@@ -9,6 +9,26 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.navicon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 3rem;
+    border-radius: 3.5rem 3.5rem 0rem 0rem;
+    height: 5rem;
+    width: 25rem;
+    background-color: rgba(13, 113, 160, 0.925);
+}
+.Mmenubutton{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #222227;
+}
 html{
     font-size: 62.5%;
 }
@@ -63,7 +83,7 @@ html{
     overflow: auto;
 }
 .taskbrief{
-    background-color: rgba(21, 145, 202, 0.925);
+    background-color: rgba(13, 113, 160, 0.925);
     display: flex;
     justify-content: center;
     align-items: center;
