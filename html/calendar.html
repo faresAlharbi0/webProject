@@ -21,14 +21,10 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-
-    </div>
     <header class="header1">
-        <div class="Hcontainer">
-        
-            <img src="../images/calendar.png" alt ="icon image of a calendar"  
+        <div class="Hcontainer">  
+            <img id="dropicon" src="../images/calendar.png" alt ="icon image of a calendar"  
             width="50">
-        
             <nav class="nav">
             <a href="index.html"> home</a>
             <a href="aboutUs.html">about us</a>
@@ -36,7 +32,7 @@
             </nav>
         </div>
     </header>
-    <div class="mcontainer">
+    <div class="mcontainer is-active" id="mcontainer">
         <div class="dropbrief">
         </div>
             <div class="taskboxes2">
@@ -190,5 +186,9 @@
             </div>
         </div>
     </div>
+    <script src="../javascript/calendar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" 
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
 </body>
 </html>
