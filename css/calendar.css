@@ -277,7 +277,7 @@ html{
     width: 40rem;
 }*/
 .dropbrief{
-    position: absolute;
+    position: relative;
     top: 0px;
     z-index: 10;
     width: 100%;
@@ -285,7 +285,7 @@ html{
     background-color: rgb(13, 113, 160);
 }
 .taskboxes2{
-    margin-top: 14rem;
+    margin-top: 1rem;
     width: 32.5rem;
     height: 70rem;
     display: flex;
