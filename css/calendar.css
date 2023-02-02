@@ -291,3 +291,25 @@ html{
     overflow: auto;
     row-gap: 0.5rem;
 }
+.taskbox{
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    color: white;
+}
+.taskname{
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.dropimgicon{
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.dropimgicon:hover{
+    background-color: rgba(21, 145, 202, 0.925);
+    border: 0.1rem solid rgba(6, 66, 94, 0.925);
+}
