@@ -107,7 +107,7 @@ html{
 }
 .taskbox{
     width: 32rem;
-    height: 9.5rem;
+    height: 15rem;
     flex: 0 0 auto;
     background-color: rgba(13, 113, 160, 0.925);
     display: flex;
@@ -292,13 +292,15 @@ html{
     row-gap: 0.5rem;
 }
 .taskbox{
-    justify-content: center;
+    display: flex;
+    justify-content: left;
     align-items: flex-start;
     font-size: 1.5rem;
     color: white;
 }
 .taskname{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
     font-weight: 600;
 }
 .dropimgicon{
