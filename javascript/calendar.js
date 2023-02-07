@@ -1,5 +1,6 @@
 const date = new Date();
-const lastDate = new Date(date.getFullYear(),date.getMonth() + 1,0).getDate();
+const renderCalendar = () =>{
+  const lastDate = new Date(date.getFullYear(),date.getMonth() + 1,0).getDate();
 const monthDays = document.querySelector(".days")
 const month = [
   "January",
@@ -36,6 +37,19 @@ for(let j = 1; j <= nextDays; j++){
   days += "<div class='next-date'>"+j+"</div>";
 }
 monthDays.innerHTML = days;
+};
+
+document.querySelector(".prev").addEventListener("click", () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar();
 //drop menue animation
 const dropicon = document.getElementById("dropicon");
 dropicon.addEventListener("click", dropDownMenu);
