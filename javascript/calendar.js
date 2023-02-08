@@ -5,8 +5,9 @@ const monthDays = document.querySelector(".days")
 const month = [
   "January",
   "February",
-  "April",
   "March",
+  "April",
+  "May",
   "June",
   "July",
   "August",
