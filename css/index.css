@@ -1,13 +1,103 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.Hcontainer{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    position: relative;left: 2.5rem;
 }
 .header1{
-    background-color: rgb(74, 163, 236);
+    height: 7rem;
+    background-color: rgba(25, 162, 226, 0.925);
     border: 5px solid rgba(6, 66, 94, 0.925);
     display: flex;
     align-items: center;
+    column-gap: 3rem;
 }
 .nav{
+    font-size: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    transition: background-color 0.2rem;
+}
+.nav a{
+    text-decoration: none;
+    width: 10rem;
+    height: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav a:hover:not(.currentpage){
+    background-color: rgba(21, 145, 202, 0.925);
+    border: 0.2rem solid rgba(6, 66, 94, 0.925);
+}
+.text{
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+.textRed{
+    font-size: 3rem;
+    color: red;
+}
+.texttitle{
+    margin-left: 5rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.texttitle2{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.images{
+    position: relative; left: 4rem;
+    width: 150px;
     
+}
+.button{
+    text-align: center;
+    margin-top: 3rem;
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.text1{
+    font-weight: 100;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 3rem;
+    width: 40rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vw;
+    background: #00155a;
 }

@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>contact us</title>
     <link href="../css/contactUs.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap" 
+    rel="stylesheet">
 </head>
 <body>
+
     <header class="header1">
-        <img src="../images/calendar.png" alt ="icon image of a calendar" 
-        width="50">
-        <nav class="nav">
+        <div class="Hcontainer">
+            <img src="../images/calendar.png" alt ="icon image of a calendar"  
+            width="50">
+            <nav class="nav">
             <a href="index.html"> home</a>
             <a href="aboutUs.html">about us</a>
-            <a href="contactUs.html"> contact us</a>      
-        </nav>
-    </header>
-    
+            <a href="contactUs.html"> contact us</a>            
+            </nav>
+            </div>
+            </header>
     <section class="contactUs">
         <form method="post" action="" >
             <h2> Contact With Us </h2>
-
             <input type="text" id = "name" placeholder="Your Name" required class="inputstyles">
             <input type="Email" id = "email" placeholder="Your email" required class="inputstyles">
             <input type="text" id = "phone" placeholder="Your phone number" required class="inputstyles">
             <textarea class="inputstyles" id = "message" rows="10" placeholder="How can we help you?" required></textarea>
             <input id="button" type="submit" value="Submit">
-
         </form>
     </section>
-
 </body>
 </html>

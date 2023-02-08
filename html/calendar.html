@@ -12,16 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,400;1,600;1,700;1,900&display=swap" 
     rel="stylesheet">
+    <!--icons-->
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-
-    </div>
     <header class="header1">
-        <div class="Hcontainer">
-        
-            <img src="../images/calendar.png" alt ="icon image of a calendar"  
-            width="50">
-        
+        <div class="Hcontainer">  
+            <div class="dropimgicon">
+                <img id="dropicon" class ="dropicon"src="../images/calendar.png" alt ="icon image of a calendar"  
+                width="50">
+            </div>
             <nav class="nav">
             <a href="index.html"> home</a>
             <a href="aboutUs.html">about us</a>
@@ -29,17 +34,81 @@
             </nav>
         </div>
     </header>
+    <div class="mcontainer" id="mcontainer">
+        <div class="dropbrief">
+        </div>
+            <div class="taskboxes2">
+                <div class="taskbox" id="taskbox2-2"><div class="taskname">
+                    task1
+                </div></div>
+                <div class="taskbox" id="taskbox2-3"><div class="taskname">
+                    task1
+                </div></div>
+                <div class="taskbox" id="taskbox2-4"><div class="taskname">
+                    task1
+                </div></div>
+                <div class="taskbox"id="taskbox2-5"><div class="taskname">
+                    task1
+                </div></div>
+                <div class="taskbox"id="taskbox2-6">task5</div>
+                <div class="taskbox" id="taskbox2-7">task2</div>
+                <div class="taskbox" id="taskbox2-8">task3</div>
+                <div class="taskbox" id="taskbox2-9">task4</div>
+                <div class="taskbox" id="taskbox2-10">task5</div>
+                <div class="taskbox" id="taskbox2-11">task1</div>
+                <div class="taskbox" id="taskbox2-12">task2</div>
+                <div class="taskbox" id="taskbox2-14">task3</div>
+                <div class="taskbox"id="taskbox2-15">task4</div>
+                <div class="taskbox"id="taskbox2-16">task5</div>
+                <div class="taskbox" id="taskbox2-17">task2</div>
+                <div class="taskbox" id="taskbox2-18">task3</div>
+                <div class="taskbox" id="taskbox2-19">task4</div>
+                <div class="taskbox" id="taskbox2-20">task5</div>
+        </div>
+    </div>
     <div class="container">
+        <div class="hidenavicon">
+            <div class="navicon">
+                <div class="Mmenubutton">
+                    <span class="material-symbols-outlined">
+                    table_rows
+                    </span>
+                </div>
+                <div class="Mmenubutton">
+                    <span class="material-symbols-outlined">
+                    calendar_month
+                    </span>
+                </div>
+                <div class="Mmenubutton">
+                    <span class="material-symbols-outlined">
+                    assignment_add
+                    </span>
+                </div>     
+            </div>
+        </div>
         <div class="taskcontainer">
             <div class="taskbrief">
                 <p>12:00</p>
             </div>
             <div class="taskboxes">
-                <div class="taskbox">task1</div>
-                <div class="taskbox">task2</div>
-                <div class="taskbox">task3</div>
-                <div class="taskbox">task4</div>
-                <div class="taskbox">task5</div>
+                <div class="taskbox" id="taskbox1-2">task1</div>
+                <div class="taskbox" id="taskbox1-3">task2</div>
+                <div class="taskbox" id="taskbox1-4">task3</div>
+                <div class="taskbox"id="taskbox1-5">task4</div>
+                <div class="taskbox"id="taskbox1-6">task5</div>
+                <div class="taskbox" id="taskbox1-7">task2</div>
+                <div class="taskbox" id="taskbox1-8">task3</div>
+                <div class="taskbox" id="taskbox1-9">task4</div>
+                <div class="taskbox" id="taskbox1-10">task5</div>
+                <div class="taskbox" id="taskbox1-11">task1</div>
+                <div class="taskbox" id="taskbox1-12">task2</div>
+                <div class="taskbox" id="taskbox1-14">task3</div>
+                <div class="taskbox"id="taskbox1-15">task4</div>
+                <div class="taskbox"id="taskbox1-16">task5</div>
+                <div class="taskbox" id="taskbox1-17">task2</div>
+                <div class="taskbox" id="taskbox1-18">task3</div>
+                <div class="taskbox" id="taskbox1-19">task4</div>
+                <div class="taskbox" id="taskbox1-20">task5</div>
             </div>
         </div>
         <div class="celendar">
@@ -129,5 +198,10 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" 
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+    <script src="../javascript/calendar.js"></script>
 </body>
 </html>
