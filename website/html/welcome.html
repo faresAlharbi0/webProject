@@ -33,13 +33,13 @@
                         <button type="button" class="toggle-button" onclick="login()">Log In</button>
                         <button type="button" class="toggle-button" onclick="register()">Register</button>
                     </div>
-                    <form class="input-box" id="login">
+                    <form method="post" action="/login" class="input-box" id="login">
                         <div class="animate-box">
-                            <input type="text" class="text-box" required>
+                            <input type="email" name="email" class="text-box" required>
                             <span>Email</span>
                         </div>
                         <div class="animate-box">
-                            <input type="password" class="text-box" required>
+                            <input type="password" name="password" class="text-box" required>
                             <span>Password</span>
                         </div>
                         <div class="box"></div>
