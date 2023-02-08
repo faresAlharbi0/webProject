@@ -29,7 +29,6 @@ for(let x = firstDayIndex; x>0; x--){
 for(let i =1; i<=lastDate; i++){
   if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
     days += "<div class='today'>"+i+"</div>";
-    console.log("was here");
   }else{
     days += "<div>"+i+"</div>";
   }
