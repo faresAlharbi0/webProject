@@ -45,7 +45,7 @@ html{
 
 .contactUs{
     width: 100%;
-    height: 949px;
+    height: 1150px;
     background: #00155a;
     display: flex;
     align-items: center;
@@ -88,4 +88,38 @@ form h2{
     width: 150px;
     margin: 20px auto;
     border-radius: 20px;
+}
+
+.gender2{
+    margin-left: 60px ;
+    font-weight: bold;
+
+}
+.gender1{
+    margin-left: 10px ;
+    font-weight: bold;
+}
+.DOB{
+    width: 60%;
+}
+
+.lang1{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.lang2{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.lang3{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#msg{
+    color: red;
+    text-align: center;
+    font-size: 16px;
 }
