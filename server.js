@@ -46,12 +46,12 @@ function getFormValidation(){
 }
 function addFormMessage(fname,lname,email,message){
     const mysql = require("mysql2");
-    let dp = createConnection({
+    let db = createConnection({
         host:'127.0.0.1',
         user:'root',
         password:'root',
-        port:'8889',
-        database:'tutorial'
+        port:'3306',
+        database:'form'
     });
     db.connect(function(err){
         //SQL command
