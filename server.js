@@ -2,6 +2,7 @@ console.log("bbbb");
 const express = require("express");
 const app = express();
 const{check, validationResult} = require("express-validator");
+const { createConnection } = require("net");
 let formValidate = getFormValidation();
 app.use(express.urlencoded({extended:false}));
 app.use("/",express.static("./website"));
@@ -17,6 +18,7 @@ app.post("/submitForm",formValidate,(request,response)=>{
         const lname = request.body.lname;
         const email = request.body.email;
         const message = request.body.message;
+        addFormMessage(fname,lname,email,message);
         let msg = "your message were submited";
         response.send(msg);
     }
@@ -41,4 +43,27 @@ function getFormValidation(){
             check('email').isEmail().withMessage("Email must of format x@y.z")
             .trim().escape()
     ]
+}
+function addFormMessage(fname,lname,email,message){
+    const mysql = require("mysql2");
+    let dp = createConnection({
+        host:'127.0.0.1',
+        user:'root',
+        password:'root',
+        port:'8889',
+        database:'tutorial'
+    });
+    db.connect(function(err){
+        //SQL command
+        let sql = "INSERT INTO form (fname, lname, email, message) VALUES ('"+fname+"', '"+lname+"', '"+email+"', '"+message+"')";
+
+        //exeucte command
+        db.query(sql, function(err,result){
+            
+            if(err) throw err;
+
+            //if no errors
+            console.log("1 record added");
+        })
+    })
 }
