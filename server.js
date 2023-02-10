@@ -45,14 +45,17 @@ function getFormValidation(){
     ]
 }
 function addFormMessage(fname,lname,email,message){
+    
+    //connection
     const mysql = require("mysql2");
-    let db = createConnection({
-        host:'127.0.0.1',
-        user:'root',
-        password:'root',
-        port:'3306',
-        database:'form'
+    let db = mysql.createConnection({
+            host:'127.0.0.1',
+            user:'root',
+            password:'root',
+            port:'3306',
+            database:'form' 
     });
+
     db.connect(function(err){
         //SQL command
         let sql = "INSERT INTO form (fname, lname, email, message) VALUES ('"+fname+"', '"+lname+"', '"+email+"', '"+message+"')";
