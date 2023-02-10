@@ -30,8 +30,8 @@
     <section class="contactUs">
         <form method="post" action="/submitForm" id="formid">
             <h2> Contact With Us </h2>
-            <input type="text" id = "fname" placeholder="First Name"  class="inputstyles">
-            <input type="text" id = "lname" placeholder="Last Name" class="inputstyles" pattern="[A-Za-z]{1,30}">
+            <input type="text" id = "fname" placeholder="First Name" name="fname" class="inputstyles">
+            <input type="text" id = "lname" placeholder="Last Name" name="lname" class="inputstyles" pattern="[A-Za-z]{1,30}">
 
             <p class="inputstyles">Gender:
                 <span class="gender1"><input type="radio"
@@ -39,7 +39,7 @@
                  <span class="gender2"><input type="radio" name="gender" class = "gender2" required > FEMALE </span></p>
             
             <input type="text" id = "phone" placeholder="Your phone number" required class="inputstyles" pattern="[0-9]{10}" minlength="10" maxlength="10">   
-            <input type="Email" id = "email" placeholder="Your email" class="inputstyles" minlength="5" maxlength="100" pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}\.*[a-zA-Z]*">
+            <input type="Email" id = "email" placeholder="Your email" name="email" class="inputstyles" minlength="5" maxlength="100" pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}\.*[a-zA-Z]*">
 
             <p class="inputstyles">Your date of birth:    <input type="date" class = "DOB" required ></p>
 
@@ -48,7 +48,7 @@
                 <span class="lang2"><input type="checkbox" name="English" class = "lang" > English </span>
                 <span class="lang3"><input type="checkbox" name="French" class = "lang"  > French </span></p>
             
-            <textarea class="inputstyles" id = "message" rows="10" placeholder="How can we help you?" required></textarea>
+            <textarea class="inputstyles" id = "message" name="message" rows="10" placeholder="How can we help you?" required></textarea>
             <p id="msg"></p>
             <input id="button" type="submit" value="Submit">
         </form>
