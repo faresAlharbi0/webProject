@@ -195,9 +195,12 @@ body{
     margin-bottom: 50px;
 }
 
-button{
+.button{
     background: #f9004d;
     color: white;
+    display: flex;
+    width: 200px;
+    justify-content: center;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -207,12 +210,12 @@ button{
     margin-top: 15px;
 }
 
-button a{
+.button a{
     text-decoration: none;
     color: white;
 }
 
-button:hover{
+.button:hover{
     background: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
