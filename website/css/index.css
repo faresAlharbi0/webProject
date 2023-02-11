@@ -4,8 +4,33 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }
+@media screen and (max-width: 740px){
+    .texttitle{
+        margin-bottom: 45rem !important;
+        margin-top: 5rem !important;
+    }
+    .texttitle2{
+        margin-top: 5rem !important;
+        margin-bottom: 0rem !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        justify-content: center;
+        width: 100%;
+        height: 100% !important;
+        background: #00155a;
+    }
+}
 html{
     font-size: 62.5%;
+}
+body{
+    background: #00155a;
 }
 .Hcontainer{
     display: flex;
